@@ -1,4 +1,6 @@
 ﻿
+using CalculatorConsoleApp.Utils;
+
 while (true)
 {
     Console.Clear();
@@ -29,8 +31,34 @@ while (true)
     switch (option)
     {
         case "1":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Sum of two numbers: ");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                Console.Write("Separate the numbers with ',': ");
+                string? numbers = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(numbers))
+                {
+                    Console.WriteLine("Numbers cannot is empty.");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                string[] splitedNumbers = numbers.Split(",");
+                int result = MyCalculator.Sum(splitedNumbers);
+
+                if (result == -1)
+                    Console.WriteLine("Input format is not valid");
+                else
+                    Console.WriteLine($"Sum of numbers: {result}");
+
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
+                continue;
+            }
         case "2":
             break;
 
