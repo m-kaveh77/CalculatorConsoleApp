@@ -20,5 +20,10 @@
                 return -1;
             }
         }
+
+        public static decimal Subtract(decimal number1, decimal number2)
+        {
+            return number1 - number2;
+        }
     }
 }
