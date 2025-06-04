@@ -16,10 +16,9 @@ while (true)
     Console.WriteLine("4. Divide");
     Console.WriteLine("5. Power");
     Console.WriteLine("6. Square Root");
-    Console.WriteLine("7. Square Root");
-    Console.WriteLine("8. Percent");
-    Console.WriteLine("9. Factorial");
-    Console.WriteLine("10. Exit");
+    Console.WriteLine("7. Percent");
+    Console.WriteLine("8. Factorial");
+    Console.WriteLine("9. Exit");
     Console.WriteLine();
     Console.WriteLine("-----------------------------------------------------------");
 
@@ -54,9 +53,6 @@ while (true)
             break;
 
         case "9":
-            break;
-
-        case "10":
             break;
 
         default:
