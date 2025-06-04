@@ -15,7 +15,7 @@
 
                 return sum;
             }
-            catc
+            catch
             {
                 return -1;
             }
