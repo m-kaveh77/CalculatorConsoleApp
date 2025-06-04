@@ -2,20 +2,20 @@
 {
     public static class MyCalculator
     {
-        public static int Sum(params string[] numbers)
+        public static decimal Sum(params string[] numbers)
         {
-            int sum = 0;
+            decimal sum = 0;
 
             try
             {
                 foreach (var number in numbers)
                 {
-                    sum += int.Parse(number);
+                    sum += decimal.Parse(number);
                 }
 
                 return sum;
             }
-            catch (FormatException e)
+            catc
             {
                 return -1;
             }
