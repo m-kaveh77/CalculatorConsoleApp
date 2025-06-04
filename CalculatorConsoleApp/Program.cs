@@ -33,7 +33,7 @@ while (true)
         case "1":
             {
                 Console.Clear();
-                Console.WriteLine("Sum of two numbers: ");
+                Console.WriteLine("Sum of numbers: ");
                 Console.WriteLine("-----------------------------------------------------------");
 
                 Console.Write("Separate the numbers with ',': ");
@@ -48,7 +48,7 @@ while (true)
                 }
 
                 string[] splitedNumbers = numbers.Split(",");
-                int result = MyCalculator.Sum(splitedNumbers);
+                decimal result = MyCalculator.Sum(splitedNumbers);
 
                 if (result == -1)
                     Console.WriteLine("Input format is not valid");
