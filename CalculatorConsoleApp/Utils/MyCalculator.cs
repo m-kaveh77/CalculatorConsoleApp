@@ -25,10 +25,15 @@
         {
             return number1 - number2;
         }
-        
-        public static decimal Multiply(int number1, int number2)
+
+        public static decimal Multiply(decimal number1, decimal number2)
         {
             return number1 * number2;
+        }
+
+        public static decimal Divide(decimal number1, decimal number2)
+        {
+            return number1 / number2;
         }
     }
 }
