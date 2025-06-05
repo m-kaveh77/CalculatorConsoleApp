@@ -40,5 +40,10 @@
         {
             return Math.Pow(number1, number2);
         }
+     
+        public static double SquareRoot(double number)
+        {
+            return Math.Sqrt(number);
+        }
     }
 }
