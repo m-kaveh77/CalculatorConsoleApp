@@ -176,8 +176,41 @@ while (true)
                 continue;
             }
         case "5":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Power of numbers: ");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                Console.Write("Number 1: ");
+                string? number1 = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number1))
+                {
+                    Console.WriteLine("Number 1 cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                Console.Write("Number 2: ");
+                string? number2 = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number2))
+                {
+                    Console.WriteLine("Number 2 cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                double result = MyCalculator.Power(double.Parse(number1), double.Parse(number2));
+
+                Console.WriteLine($"{number1} ** {number2} = {result}");
+
+                Console.Write("Press any key to continue...");
+                Console.ReadKey();
+                continue;
+            }
         case "6":
             break;
 
