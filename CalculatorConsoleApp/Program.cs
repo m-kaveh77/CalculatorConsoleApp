@@ -306,8 +306,13 @@ while (true)
                 continue;
             }
         case "9":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Good Luck! Bye.");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                return;
+            }
         default:
             {
                 Console.WriteLine("Please select valid options");
