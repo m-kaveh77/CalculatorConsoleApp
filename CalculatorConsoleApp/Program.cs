@@ -281,8 +281,30 @@ while (true)
                 continue;
             }
         case "8":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Factorial of numbers: ");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                Console.Write("Number: ");
+                string? number = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number))
+                {
+                    Console.WriteLine("Number cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                double result = MyCalculator.Factorial(int.Parse(number));
+
+                Console.WriteLine($"Factorial of {number} = {result}");
+
+                Console.Write("Press any key to continue...");
+                Console.ReadKey();
+                continue;
+            }
         case "9":
             break;
 
