@@ -40,10 +40,15 @@
         {
             return Math.Pow(number1, number2);
         }
-     
+
         public static double SquareRoot(double number)
         {
             return Math.Sqrt(number);
+        }
+
+        public static decimal Percent(decimal number1, decimal number2)
+        {
+            return (number1 / number2) * 100;
         }
     }
 }
