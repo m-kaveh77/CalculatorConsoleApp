@@ -50,5 +50,13 @@
         {
             return (number1 / number2) * 100;
         }
+
+        public static int Factorial(int number)
+        {
+            if (number < 2)
+                return 1;
+
+            return number * Factorial(number - 1);
+        }
     }
 }
