@@ -35,5 +35,10 @@
         {
             return number1 / number2;
         }
+
+        public static double Power(double number1, double number2)
+        {
+            return Math.Pow(number1, number2);
+        }
     }
 }
