@@ -237,8 +237,49 @@ while (true)
                 continue;
             }
         case "7":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Percent of numbers: ");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                Console.Write("Current Number: ");
+                string? number1 = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number1))
+                {
+                    Console.WriteLine("Number 1 cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                Console.Write("Total Number: ");
+                string? number2 = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number2))
+                {
+                    Console.WriteLine("Number 2 cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                if (number2 == "0")
+                {
+                    Console.WriteLine("Total Number cannot have zero value.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                decimal result = MyCalculator.Percent(decimal.Parse(number1), decimal.Parse(number2));
+
+                Console.WriteLine($"(Current Number / Total Number) * 100 = {result}%");
+
+                Console.Write("Press any key to continue...");
+                Console.ReadKey();
+                continue;
+            }
         case "8":
             break;
 
