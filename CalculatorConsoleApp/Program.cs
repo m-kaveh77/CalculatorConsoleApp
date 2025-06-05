@@ -212,8 +212,30 @@ while (true)
                 continue;
             }
         case "6":
-            break;
+            {
+                Console.Clear();
+                Console.WriteLine("Square root of numbers: ");
+                Console.WriteLine("-----------------------------------------------------------");
 
+                Console.Write("Number: ");
+                string? number = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(number))
+                {
+                    Console.WriteLine("Number cannot empty.");
+                    Console.Write("Press any key to continue...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                double result = MyCalculator.SquareRoot(double.Parse(number));
+
+                Console.WriteLine($"Square root of {number} = {result}");
+
+                Console.Write("Press any key to continue...");
+                Console.ReadKey();
+                continue;
+            }
         case "7":
             break;
 
